@@ -1,0 +1,48 @@
+{
+  "name": "marc-editor",
+  "version": "0.0.1",
+  "description": "A JavsScript MARC Editor",
+  "scripts": {
+    "test": "mocha test --recursive --require test/helpers/chai.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jiaola/marc-editor.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jiaola/marc-editor/issues"
+  },
+  "homepage": "https://github.com/jiaola/marc-editor#readme",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "keywords": [
+    "MARC",
+    "Node.js",
+    "Javascript",
+    "editor"
+  ],
+  "dependencies": {
+    "autobind-decorator": "^1.3.2",
+    "brace": "^0.5.1",
+    "marc4js": "^0.0.5",
+    "marc8": "^0.0.4",
+    "react": "^0.14.2",
+    "react-ace": "^2.6.0",
+    "react-bootstrap": "^0.27.3",
+    "react-dom": "^0.14.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.1.4",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.4",
+    "babel-preset-react": "^6.1.4",
+    "chai": "^1.10.0",
+    "html-webpack-plugin": "^1.6.2",
+    "mocha": "latest",
+    "webpack": "^1.12.4",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "author": "Dazhi Jiao <dazhi.jiao@gmail.com>",
+  "license": "Apache-2.0"
+}
