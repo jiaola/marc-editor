@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "A JavsScript MARC Editor",
   "scripts": {
+    "start": "webpack-dev-server",
     "test": "mocha test --recursive --require test/helpers/chai.js"
   },
   "repository": {
@@ -25,12 +26,15 @@
   "dependencies": {
     "autobind-decorator": "^1.3.2",
     "brace": "^0.5.1",
+    "flux": "^2.1.1",
+    "history": "^1.13.1",
     "marc4js": "^0.0.5",
     "marc8": "^0.0.4",
     "react": "^0.14.2",
     "react-ace": "^2.6.0",
     "react-bootstrap": "^0.27.3",
-    "react-dom": "^0.14.2"
+    "react-dom": "^0.14.2",
+    "react-router": "^1.0.0"
   },
   "devDependencies": {
     "babel-core": "^6.1.4",

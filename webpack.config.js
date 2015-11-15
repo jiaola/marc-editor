@@ -1,16 +1,17 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = {
-    context: __dirname + "/lib",
-    entry: "./index.jsx",
+    context: __dirname + "/src/js",
+    entry: "./main.js",
     output: {
-        path: "./build",
-        filename: "app.js",
+        path: "./dist",
+        filename: "bundle.js",
+        publicPath: '/'
     },
     plugins: [
       new HtmlWebpackPlugin({
         title: 'MARC Editor',
-        template: 'assets/index.html',
+        template: 'src/assets/index.html',
         inject: 'body'
       })
     ],
@@ -34,6 +35,7 @@ module.exports = {
         extensions: ['', '.js', '.jsx']
     },
     devServer: {
-        contentBase: "./build"
+        inline: true,
+        contentBase: "./dist"
     }
 };
