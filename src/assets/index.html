@@ -3,13 +3,25 @@
   <head>
     <meta charset="utf-8">
     <title>React, ES2015 and Webpack</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react.js"></script>
     <script>if (!window.React) { document.write('<script src="/libs/react.min.js"><\/script>'); }</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react-dom.min.js"></script>
     <script>if (!window.ReactDOM) { document.write('<script src="/libs/react-dom.min.js"><\/script>'); }</script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+    <style type="text/css" media="screen">
+    #marc-editor {
+        margin: 0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    </style>
   </head>
   <body>
-    <div id="main"></div>
+    <div class="container" style="height: 100%">
+      <div id="editor"></div>
+    </div>
   </body>
 </html>
