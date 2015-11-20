@@ -44,7 +44,7 @@ class MarcEditor extends React.Component {
     result.onError((error) => console.log(error));
     result.onValue((records) => {
       if (records.length > 0) {
-        MarcEditorActions.changeMode(key, records.splice(0, 1));
+        MarcEditorActions.changeMode(key, records);
       }
     });
   }
