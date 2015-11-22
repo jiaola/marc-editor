@@ -20,7 +20,6 @@ class MarcEditor extends React.Component {
   }
 
   componentWillMount(){
-    console.log('will mount');
     MarcEditorStore.addChangeListener( this._onChange );
   }
 
@@ -30,7 +29,6 @@ class MarcEditor extends React.Component {
 
   _onChange() {
     this.setState(initEditor(this.props));
-    console.log(this.state.key);
     let records = MarcEditorStore.getRecords();
     let result = Bacon.fromNodeCallback(marc4js.transform, records, {toFormat: this.state.key});
     result.onError((error) => console.log(error));
@@ -43,9 +41,7 @@ class MarcEditor extends React.Component {
     let result = Bacon.fromNodeCallback(marc4js.parse, value, {fromFormat: this.state.key});
     result.onError((error) => console.log(error));
     result.onValue((records) => {
-      if (records.length > 0) {
-        MarcEditorActions.changeMode(key, records);
-      }
+      MarcEditorActions.changeMode(key, records);
     });
   }
 
