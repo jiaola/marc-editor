@@ -1,15 +1,21 @@
 import React from 'react';
 import AceEditor from './editors/ace-editor';
-import {Tabs, Tab} from 'react-bootstrap';
 import MarcEditorActions from '../actions/marc-editor-actions';
 import MarcEditorMixin from '../mixins/marc-editor-mixin';
 import MarcEditorStore from '../stores/marc-editor-store';
+import Tab from './bootstrap/tab';
 import marc4js from 'marc4js';
 import Bacon from 'baconjs';
 
 const initEditor = (props) => (
   {key: MarcEditorStore.getMode()}
 )
+
+var Tabs = (props) => (
+    <ul className="nav nav-tabs">
+      {props.children}
+    </ul>
+  );
 
 class MarcEditor extends React.Component {
   constructor(props) {
@@ -54,8 +60,9 @@ class MarcEditor extends React.Component {
         <div className="row">
           <div className="toolbar col-lg-12 col-md-12 col-sm-12">
             <Tabs activeKey={this.state.key} onSelect={this.handleTabSelect}>
-              <Tab eventKey="text" title="Text"></Tab>
-              <Tab eventKey="marc" title="MARC"></Tab>
+
+              <Tab key='text' uid='Text' onSelect={this.handleTabSelect.bind(null, 'text')} active={this.state.key === 'text'}/>
+              <Tab key='marc' uid='MARC' onSelect={this.handleTabSelect.bind(null, 'marc')} active={this.state.key === 'marc'}/>
             </Tabs>
           </div>
         </div>

@@ -1,5 +1,4 @@
 import React from 'react';
-import {Tabs, Tab} from 'react-bootstrap';
 import ace from 'brace';
 
 require('brace/theme/monokai');

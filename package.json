@@ -32,7 +32,6 @@
     "marc4js": "^0.0.7",
     "marc8": "^0.0.4",
     "react": "^0.14.2",
-    "react-bootstrap": "^0.27.3",
     "react-dom": "^0.14.2",
     "react-router": "^1.0.0"
   },
