@@ -54,8 +54,11 @@ class MarcEditor extends React.Component {
   render() {
     return (
       <div className="panel panel-default">
-        <div className="panel-heading">
-        MARC Editor
+        <div className="panel-heading clearfix">
+          <h3 className="panel-title pull-left">MARC Editor</h3>
+          <div className="btn-group pull-right">
+            <a href="https://github.com/jiaola/marc-editor" className="btn btn-default btn-xs btn-primary">Source Code</a>
+          </div>
         </div>
         <div className="row">
           <div className="toolbar col-lg-12 col-md-12 col-sm-12">

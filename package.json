@@ -4,7 +4,8 @@
   "description": "A JavsScript MARC Editor",
   "scripts": {
     "start": "webpack-dev-server",
-    "test": "mocha test --recursive --require test/helpers/chai.js"
+    "test": "mocha test --recursive --require test/helpers/chai.js",
+    "deploy:dev": "webpack -p; firebase deploy"
   },
   "repository": {
     "type": "git",
