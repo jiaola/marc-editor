@@ -11,16 +11,30 @@ A Javascript based MARC editor
 After clone the github repository
 
 ```
-npm install --global webpack webpack-dev-server babel
-npm install
+$ npm install --global webpack webpack-dev-server babel
+$ npm install
 ```
 
 Then to start the app
 ```
-webpack-dev-server
+$ webpack-dev-server
 ```
 
 Now open http://localhost:8080
+
+### Deploy to firebase
+
+Install firebase
+
+```
+$ npm install -g firebase-tools
+```
+
+Then run
+
+```
+firebase deploy
+```
 
 It works for editing multiple MARC records and support a text format from [MarcEdit] and MARC.
 
