@@ -2,7 +2,7 @@ import React from 'react';
 import ace from 'brace';
 
 require('brace/theme/monokai');
-require('./ace-mrk-mode.js');
+require('./ace-marctext-mode.js');
 
 class AceEditor extends React.Component {
   constructor(props) {
@@ -19,7 +19,7 @@ class AceEditor extends React.Component {
   componentDidMount() {
     this.editor = ace.edit(this.props.name);
     this.editor.setTheme("ace/theme/monokai");
-    this.editor.session.setMode("ace/mode/mrk");
+    this.editor.session.setMode("ace/mode/marctext");
     this.editor.getSession().setUseWrapMode(true);
     this.editor.on('change', this.onChange);
     this.editor.$blockScrolling = Infinity;
