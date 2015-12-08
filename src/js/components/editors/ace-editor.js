@@ -2,7 +2,7 @@ import React from 'react';
 import ace from 'brace';
 
 require('brace/theme/monokai');
-require('./ace-marctext-mode.js');
+require('brace/mode/marctext');
 
 class AceEditor extends React.Component {
   constructor(props) {
