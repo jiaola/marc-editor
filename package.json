@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "A JavsScript MARC Editor",
   "scripts": {
-    "start": "webpack-dev-server",
+    "start": "webpack-dev-server --port 4000",
     "test": "mocha test --recursive --require test/helpers/chai.js",
     "deploy:dev": "webpack -p; firebase deploy"
   },
@@ -34,7 +34,9 @@
     "marc8": "^0.0.4",
     "react": "^0.14.2",
     "react-dom": "^0.14.2",
-    "react-router": "^1.0.0"
+    "react-dropzone": "^3.3.0",
+    "react-dropzone-component": "^0.8.1",
+    "react-router": "^1.0.2"
   },
   "devDependencies": {
     "babel-core": "^6.1.4",
@@ -43,8 +45,10 @@
     "babel-preset-react": "^6.1.4",
     "babel-preset-stage-0": "^6.1.18",
     "chai": "^1.10.0",
+    "css-loader": "^0.23.1",
     "html-webpack-plugin": "^1.6.2",
     "mocha": "latest",
+    "style-loader": "^0.13.0",
     "webpack": "^1.12.4",
     "webpack-dev-server": "^1.12.1"
   },

@@ -45,7 +45,7 @@ class AceEditor extends React.Component {
   render() {
     var divStyle = {
       height: "700px"
-    }
+    };
     return (
       <div id={this.props.name} style={divStyle}>
       </div>

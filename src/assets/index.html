@@ -3,25 +3,20 @@
   <head>
     <meta charset="utf-8">
     <title>A MARC Editor</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script>if (!window.$) { document.write ('<script src="/libs/jquery.min.js"><\/script>'); }</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react.js"></script>
     <script>if (!window.React) { document.write('<script src="/libs/react.min.js"><\/script>'); }</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.14.2/react-dom.min.js"></script>
     <script>if (!window.ReactDOM) { document.write('<script src="/libs/react-dom.min.js"><\/script>'); }</script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
-    <style type="text/css" media="screen">
-    #marc-editor {
-        margin: 0;
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-    }
-    </style>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+            integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   </head>
   <body>
-    <div class="container" style="height: 100%">
-      <div id="editor"></div>
-    </div>
+    <div id="main"></div>
   </body>
 </html>

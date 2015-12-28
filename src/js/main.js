@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import MarcEditor from './components/marc-editor'
+import App from './components/app';
 
-ReactDOM.render(
-  <MarcEditor name="marc_editor"/>,
-  document.getElementById('editor')
-);
+ReactDOM.render(<App />, document.getElementById('main'));
+
