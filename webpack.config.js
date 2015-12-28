@@ -1,10 +1,12 @@
 var HtmlWebpackPlugin = require('html-webpack-plugin')
+var CopyWebpackPlugin = require('copy-webpack-plugin');
+var path = require('path');
 
 module.exports = {
-    context: __dirname + "/src/js",
-    entry: "./main.js",
+    context: path.join(__dirname + "/src"),
+    entry: "./js/main.js",
     output: {
-        path: "./dist",
+        path: __dirname + "/dist",
         filename: "bundle.js"        
     },
     plugins: [
@@ -12,7 +14,11 @@ module.exports = {
         title: 'MARC Editor',
         template: 'src/assets/index.html',
         inject: 'body'
-      })
+      }),
+      new CopyWebpackPlugin([
+          { from: './assets/lib', to: './lib/'},
+          { from: './assets/css', to: './css/'}
+      ])
     ],
     module: {
         loaders: [

@@ -45,6 +45,7 @@
     "babel-preset-react": "^6.1.4",
     "babel-preset-stage-0": "^6.1.18",
     "chai": "^1.10.0",
+    "copy-webpack-plugin": "^0.3.3",
     "css-loader": "^0.23.1",
     "html-webpack-plugin": "^1.6.2",
     "mocha": "latest",
